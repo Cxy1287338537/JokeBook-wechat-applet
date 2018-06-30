@@ -1,4 +1,4 @@
-# tulingRobot-wechat-applet
+# JokeBook-wechat-applet
 
 微信小程序练手项目 - 笑话大全。每小时更新。笑话大全，信息搜集整理于互联网，包括文字笑话、搞笑图片等。
 
