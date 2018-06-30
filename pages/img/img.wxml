@@ -1,0 +1,32 @@
+ <view class="view-content">
+  <view class="view-heading">
+    <view class="title">[{{body.contentlist[nowView].ct}}]\t{{body.contentlist[nowView].title}}</view>
+  </view>
+  <image class="view-img" mode="aspectFill" src="{{body.contentlist[nowView].img}}"></image>
+</view> 
+<view class="control-bar">
+  <view class="control-content {{controlBar?'right':''}}">
+    <view class="left">
+      <view class="btn btn-last" bindtap="getLast">
+        <image mode="scaleToFill" src="../../images/last.png"></image>
+      </view>
+      <view class="btn btn-next" bindtap="getNext">
+        <image mode="scaleToFill" src="../../images/next.png"></image>
+      </view>
+      <view class="btn btn-switch" bindtap="switchControl">
+        <image mode="scaleToFill" src="../../images/more.png"></image>
+      </view>
+    </view>
+    <view class="right">
+      <view class="btn btn-switch" bindtap="switchControl">
+        <image mode="scaleToFill" src="../../images/more.png"></image>
+      </view>
+      <view class="btn input-group">
+        <input class="input-control" placeholder="{{(currentPage-1)*body.maxResult + 1 + nowView}}/{{body.allNum}}" placeholder-class="small" confirm-type="go" type="number" value="{{inputValue||''}}" bindconfirm="goView" bindinput="onInput"></input>
+        <view class="input-btn" bindtap="goView">
+          <image mode="scaleToFill" src="../../images/change.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

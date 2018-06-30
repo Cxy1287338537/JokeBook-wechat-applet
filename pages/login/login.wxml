@@ -1,0 +1,8 @@
+<view class="panel">
+  <view class="hdr">幽默故事汇将获取您的以下信息：</view>
+  <view class="ul">
+    <view class="li"><text>用户昵称</text></view>
+    <view class="li"><text>用户头像</text></view>
+  </view>
+  <button class="btn" type="primary" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">同意授权</button>
+</view>

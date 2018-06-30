@@ -1,0 +1,14 @@
+page {
+  height: 100%;
+  color: #001f3f;
+  position: relative;
+  background-color: #f3f3f3;
+}
+
+.panel {
+  width: 750rpx;
+  padding: 25rpx;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}

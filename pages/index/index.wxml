@@ -1,0 +1,11 @@
+<view class="user-panel">
+  <view class="user-panel-left">
+    <image class="user-avatar" mode="aspectFit" src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="user-panel-right">
+    <view class="user-name">{{userInfo.nickName}}</view>
+    <view class="user-sex">
+      <image class="user-sex-icon" mode="aspectFit" src="../../images/{{userInfo.gender===1?'male':'female'}}.png"></image>
+    </view>
+  </view>
+</view>

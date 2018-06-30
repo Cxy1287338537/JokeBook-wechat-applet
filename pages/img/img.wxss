@@ -1,0 +1,104 @@
+.control-bar {
+  right: 0;
+  bottom: 80rpx;
+  width: 350rpx;
+  height: 120rpx;
+  position: fixed; 
+  overflow: hidden;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  background-color: #FFDE08;
+  border: 10rpx solid #FFDE08;
+}
+.control-content {
+  width: 700rpx;
+  height: 100rpx;
+  position: relative;
+}
+.control-content > .left {
+  width: 330rpx;
+  height: 100rpx;
+  position: relative;
+  margin-right: 6rpx;
+  display: inline-block;
+}
+.control-content > .right {
+  width: 330rpx;
+  height: 100rpx;
+  position: relative;
+  display: inline-block;
+}
+.control-content.right {
+  transform: translateX(-330rpx);
+}
+.control-content .btn {
+  float: left;
+  height: 100rpx;
+  box-sizing: border-box;
+  background-color: #ffde08;
+  border: 2rpx solid #e8cbfb;
+}
+.control-content .input-group {
+  width: 260rpx;
+  position: relative;
+}
+.input-group > .input-control {
+  float: left;
+  width: 130rpx;
+  height: 98rpx;
+  padding: 0 10rpx;
+  line-height: 98rpx;
+  box-sizing: border-box;
+  background-color: #f8f8f8; 
+  color: #001f3f !important;
+}
+.input-group > .input-btn {
+  float: left;
+   width: calc(100% - 130rpx); 
+  height: 98rpx;
+  box-sizing: border-box;
+  border-left: 2rpx solid #e8cbfb;
+}
+.control-content .btn-last, .control-content .btn-next {
+  width: 130rpx;
+}
+.control-content .btn-last > image, 
+.control-content .btn-next > image,
+.input-group > .input-btn > image  {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 8rpx 24rpx;
+  display: inline-block;
+}
+.control-content .btn-switch {
+  width: calc(100% - 260rpx);
+  text-align: center;
+}
+.control-content .btn-switch > image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 24rpx 0;
+  display: inline-block;
+}
+
+.view-content {
+  width: 750rpx;
+  height: 100%;
+  background-color: #000000;
+}
+.view-heading {
+  width: 750rpx;
+  color: #f8f8f8;
+  font-size: 40rpx;
+  font-weight: 600;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+  background-color: rgba(50, 50, 50, 0.65);
+}
+.view-img {
+  width: 750rpx;
+  margin-top: 100rpx;
+}
+.small {
+  font-size: 24rpx;
+}

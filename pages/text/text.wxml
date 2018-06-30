@@ -1,0 +1,18 @@
+<view class="control-bar">
+  <button class="last-page {{body.currentPage===1?'ban':''}}" hover-class="btn-active" bindtap="getLastPage">上页</button>
+  <view class="input-group">
+    <input class="input-control" placeholder="{{body.currentPage}}/{{body.allPages}}" adjust-position="false" confirm-type="go" type="number" value="{{inputValue||''}}" bindconfirm="goPage" bindinput="onInput"></input>
+    <button class="input-btn" bindtap="goPage">跳转</button>
+  </view>
+  <button class="next-page {{body.currentPage===body.allPages?'ban':''}}" hover-class="btn-active" bindtap="getNextPage">下页</button>
+</view>
+
+<scroll-view class="content" scroll-y="true" enable-back-to-top="true" scroll-top="{{scrollTop}}">
+  <view class="content-list" wx:for="{{body.contentlist || []}}" wx:key="key">
+    <view class="title">{{item.title}}</view>
+    <view class="text"><text decode="true">{{item.text}}</text></view>
+    <view class="footer">
+      <text class="ct">{{item.ct}}</text>
+    </view>
+  </view>
+</scroll-view>

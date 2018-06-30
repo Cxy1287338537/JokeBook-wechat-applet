@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/text/text",
+    "pages/img/img"
+  ],
+  "window": {
+    "backgroundColor": "#f3f3f3",
+    "navigationBarBackgroundColor": "#FFDE08",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#ffde08",
+    "list": [
+      {
+        "text": "文字",
+        "pagePath": "pages/text/text",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/order_fill.png"
+      },
+      {
+        "text": "图文",
+        "pagePath": "pages/img/img",
+        "iconPath": "images/picture.png",
+        "selectedIconPath": "images/picture_fill.png"
+      },
+      {
+        "text": "我",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/people.png",
+        "selectedIconPath": "images/people_fill.png"
+      }
+    ]
+  }
+}
